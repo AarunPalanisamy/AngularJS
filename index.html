@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html ng-app="myapp">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body >
+        <div ng-controller="myCtrl">
+        <input type = "text" ng-model="name"><br><br>
+        {{ name }} 
+        </div>
+    </body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src= "script2.js" type = "module"></script>
+<body ng-app="myapp">
+<div>
+<div ng-controller="myCtrl">
+<h1 ng-click="changeName()">{{ fname }}</h1>
+<p><input type="text" ng-model="fname" placeholder="FirstName"></p>
+<h1>  {{fname +" "+lname}} </h1>
+</div></div>
+<div>
+<div ng-controller="Controller" >
+        <student name = "Arun"></student><br/>
+        <student name = "Ramesh"></student><br/>
+        <student name = "Sharif"></student>
+</div></div>
+<div  ng-controller = "Marks">
+        <p>Enter a number: <input type = "number" ng-model = "number.field1" /></p><br>
+        <p>Enter a number: <input type = "number" ng-model = "number.field2" /></p>
+        <button ng-click = "add()"> Click Me! </button>
+        <p>Result: {{result}}</p>
+    
+    </div>
+
+</body>
+</html>
